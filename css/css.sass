@@ -1,5 +1,7 @@
 $text-color: #1F2428
 $text-white: #FFFFFF
+$text-green: #01CD7D
+
 @font-face
   font-family: "Gilroy-Light"
   src: url("../fonts/Gilroy-Light.otf")
@@ -99,7 +101,7 @@ body
       font-weight: 800
       font-size: 44px
       line-height: 50px
-  &_items
+  &_tabs
     display: flex
     justify-content: space-between
     margin-top: 20px !important
@@ -114,3 +116,175 @@ body
         line-height: 24px
       svg
         margin-right: 17px
+  &_description
+    &-text
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 26px
+      line-height: 36px
+      margin-bottom: 40px
+    img
+      width: 100%
+      position: relative
+    &-priceblock
+      display: flex
+      align-items: center
+      img
+        width: 75px
+        height: 54px
+        border-radius: 8px
+        margin-right: 28px
+      &-text
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 24px
+      &-price
+        font-family: "Gilroy-ExtraBold"
+        font-style: normal
+        font-weight: 700
+        font-size: 26px
+        line-height: 36px
+  &_footer
+    display: flex
+    align-items: center
+    img
+      height: 112px
+    svg
+      margin: 45px
+    &-left
+      justify-content: start
+    &-middle
+      flex-direction: column
+      justify-content: center
+      span
+        color: $text-green
+      &_1
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        margin: 7px
+      &_2
+        font-style: normal
+        font-weight: 700
+        font-size: 26px
+        line-height: 36px
+        margin: 7px
+    &-right
+      justify-content: end
+
+.benefits
+  display: flex
+  justify-content: center
+  padding-top: 160px
+  padding-bottom: 160px
+  &-block
+    align-items: center
+    border-right: 1px solid #C0C9D7
+    display: flex
+    margin-right: 70px
+    &:last-child
+      border: none
+      margin-right: 0
+    svg
+      margin-right: 26px
+    p
+      margin-right: 70px
+
+.assignment
+  display: flex
+  align-items: center
+  color: $text-white
+  svg
+    margin-right: 76px
+    margin-top: 20px
+    margin-bottom: 20px
+  &-block
+    &_header
+      font-style: normal
+      font-weight: 700
+      font-size: 30px
+      line-height: 40px
+      p
+        margin-bottom: 11px !important
+    &_text
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 30px
+
+.calculation
+  margin-top: 160px
+  &_header
+    font-family: "Gilroy-ExtraBold"
+    font-style: normal
+    font-weight: 800
+    font-size: 44px
+    line-height: 56px
+    margin-bottom: 20px
+  &_text
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 36px
+  &_block
+    display: flex
+    justify-content: center
+    margin-bottom: 40px
+  &_data
+    border-bottom: 1px solid #C0C9D7
+    margin: 0px 20px
+    &__header
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 14px
+      line-height: 18px
+    &__item
+      display: flex
+      align-items: center
+      svg
+        margin-right: 15px
+
+.variables
+  margin-top: 100px
+  &_header
+    font-family: "Gilroy-ExtraBold"
+    font-style: normal
+    font-weight: 800
+    font-size: 36px
+    line-height: 56px
+  &_name
+    display: flex
+    border-right: 1px solid #C0C9D7
+    align-items: center
+    margin-bottom: 50px
+    svg
+      margin: 0 25px
+    p
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 24px
+  &_data    
+    border-right: 1px solid #C0C9D7
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+    span
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 18px
+      margin: auto 20px
+    p
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 16px
+      margin: auto 20px

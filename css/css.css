@@ -136,7 +136,7 @@ html {
   line-height: 50px;
 }
 
-.category_items {
+.category_tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ html {
   margin-bottom: 54px !important;
 }
 
-.category_items-item {
+.category_tabs-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,14 +156,308 @@ html {
           align-items: center;
 }
 
-.category_items-item__text {
+.category_tabs-item__text {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
 
-.category_items-item svg {
+.category_tabs-item svg {
   margin-right: 17px;
+}
+
+.category_description-text {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.category_description img {
+  width: 100%;
+  position: relative;
+}
+
+.category_description-priceblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category_description-priceblock img {
+  width: 75px;
+  height: 54px;
+  border-radius: 8px;
+  margin-right: 28px;
+}
+
+.category_description-priceblock-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.category_description-priceblock-price {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.category_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category_footer img {
+  height: 112px;
+}
+
+.category_footer svg {
+  margin: 45px;
+}
+
+.category_footer-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.category_footer-middle {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category_footer-middle span {
+  color: #01CD7D;
+}
+
+.category_footer-middle_1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 7px;
+}
+
+.category_footer-middle_2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 7px;
+}
+
+.category_footer-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.benefits-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #C0C9D7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 70px;
+}
+
+.benefits-block:last-child {
+  border: none;
+  margin-right: 0;
+}
+
+.benefits-block svg {
+  margin-right: 26px;
+}
+
+.benefits-block p {
+  margin-right: 70px;
+}
+
+.assignment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.assignment svg {
+  margin-right: 76px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.assignment-block_header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.assignment-block_header p {
+  margin-bottom: 11px !important;
+}
+
+.assignment-block_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.calculation {
+  margin-top: 160px;
+}
+
+.calculation_header {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+.calculation_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.calculation_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.calculation_data {
+  border-bottom: 1px solid #C0C9D7;
+  margin: 0px 20px;
+}
+
+.calculation_data__header {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calculation_data__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculation_data__item svg {
+  margin-right: 15px;
+}
+
+.variables {
+  margin-top: 100px;
+}
+
+.variables_header {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+.variables_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #C0C9D7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.variables_name svg {
+  margin: 0 25px;
+}
+
+.variables_name p {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.variables_data {
+  border-right: 1px solid #C0C9D7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.variables_data span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: auto 20px;
+}
+
+.variables_data p {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  margin: auto 20px;
 }
 /*# sourceMappingURL=css.css.map */
