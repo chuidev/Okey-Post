@@ -128,6 +128,10 @@ html {
   margin: 54px;
 }
 
+.category span {
+  color: #01CD7D;
+}
+
 .category_header-item {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -188,6 +192,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 60px;
 }
 
 .category_description-priceblock img {
@@ -202,6 +207,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
 }
 
 .category_description-priceblock-price {
@@ -210,6 +216,7 @@ html {
   font-weight: 700;
   font-size: 26px;
   line-height: 36px;
+  margin: 0;
 }
 
 .category_footer {
@@ -374,6 +381,7 @@ html {
 .calculation_data {
   border-bottom: 1px solid #C0C9D7;
   margin: 0px 20px;
+  padding: 10px 0;
 }
 
 .calculation_data__header {
@@ -382,6 +390,15 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+}
+
+.calculation_data input {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
 }
 
 .calculation_data__item {
@@ -393,8 +410,13 @@ html {
           align-items: center;
 }
 
-.calculation_data__item svg {
-  margin-right: 15px;
+.calculation_data__item-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  width: 80%;
+  margin-left: 10px;
 }
 
 .variables {
@@ -442,6 +464,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.variables_data:last-child {
+  border: none;
 }
 
 .variables_data span {
@@ -459,5 +488,53 @@ html {
   font-size: 20px;
   line-height: 16px;
   margin: auto 20px;
+}
+
+.steps {
+  padding-top: 20px;
+}
+
+.steps-header {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+.steps-block {
+  text-align: center;
+}
+
+.steps-block_header {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.steps-block_text {
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.steps-block_text span {
+  color: #01CD7D;
+}
+
+.steps-footer {
+  padding-top: 20px;
+}
+
+.steps-footer_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
 }
 /*# sourceMappingURL=css.css.map */

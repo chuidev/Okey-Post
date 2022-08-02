@@ -94,6 +94,8 @@ body
       margin: 54px
 
 .category
+  span
+    color: $text-green
   &_header
     &-item
       font-family: "Gilroy-ExtraBold"
@@ -130,6 +132,7 @@ body
     &-priceblock
       display: flex
       align-items: center
+      padding-top: 60px
       img
         width: 75px
         height: 54px
@@ -140,12 +143,14 @@ body
         font-weight: 400
         font-size: 18px
         line-height: 24px
+        margin: 0
       &-price
         font-family: "Gilroy-ExtraBold"
         font-style: normal
         font-weight: 700
         font-size: 26px
         line-height: 36px
+        margin: 0
   &_footer
     display: flex
     align-items: center
@@ -237,17 +242,30 @@ body
   &_data
     border-bottom: 1px solid #C0C9D7
     margin: 0px 20px
+    padding: 10px 0
     &__header
       font-family: "Gilroy-ExtraBold"
       font-style: normal
       font-weight: 700
       font-size: 14px
       line-height: 18px
+    input
+      font-family: "Gilroy-Light"
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 16px
+      border: none
     &__item
       display: flex
       align-items: center
-      svg
-        margin-right: 15px
+      &-text
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 16px
+        width: 80%
+        margin-left: 10px
 
 .variables
   margin-top: 100px
@@ -275,6 +293,9 @@ body
     display: flex
     flex-direction: column
     margin-bottom: 50px
+    justify-content: center
+    &:last-child
+      border: none
     span
       font-style: normal
       font-weight: 400
@@ -288,3 +309,36 @@ body
       font-size: 20px
       line-height: 16px
       margin: auto 20px
+
+.steps
+  padding-top: 20px
+  &-header
+    font-family: "Gilroy-ExtraBold"
+    font-style: normal
+    font-weight: 800
+    font-size: 44px
+    line-height: 56px
+  &-block
+    text-align: center
+    &_header
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 24px
+      text-align: left
+    &_text
+      text-align: left
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 30px
+      span
+        color: $text-green
+  &-footer
+    padding-top: 20px
+    &_text
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 36px
