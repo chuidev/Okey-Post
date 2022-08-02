@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=css.css.map */
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+
+.green-btn {
+  font-family: 'Gilroy-Light';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, from(#00C97B), color-stop(96.96%, #00D981));
+  background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+  -webkit-box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+          box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+  border-radius: 36px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_menu-item {
+  color: #1F2428;
+  text-decoration: none;
+  font-family: "Gilroy-Light";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.header_sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_sign-item {
+  color: #1F2428;
+  text-decoration: none;
+  font-family: "Gilroy-Light";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 20px;
+}
+/*# sourceMappingURL=css.css.map */
