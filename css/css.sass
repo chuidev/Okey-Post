@@ -12,9 +12,6 @@ $text-green: #01CD7D
 html
   font-family: 'Gilroy-Light'
 
-body
-  // margin: 0
-
 .green-btn
   display: inline
   font-weight: 700
@@ -31,18 +28,24 @@ body
   border-radius: 36px
   width: 90% !important
 
+.section__title
+  font-family: "Gilroy-ExtraBold"
+  font-weight: 800
+  font-size: 44px
+  line-height: 50px
+  margin-top: 160px
+
 .header
   height: 120px
   align-items: center
-  &__logo
   &__menu
     display: flex
     justify-content: space-between
-    &-link
-      color: $text-black
-      text-decoration: none
-      font-size: 15px
-      font-weight: 600
+  &__link
+    color: $text-black
+    text-decoration: none
+    font-size: 15px
+    font-weight: 600
   &__sign
     display: flex
     justify-content: end
@@ -55,24 +58,21 @@ body
       font-size: 15px
       font-weight: 600
   &__contact
-    display: flex
-    justify-content: end
-    &-link
-      font-size: 13px
+    font-size: 13px
+      
 
 .poster
-  &__textblock
-    // display: flex
-    // flex-direction: column
-    // justify-content: center
-    &-header
+  display: flex
+  align-items: center
+  height: 680px
+  &__info
+    &-title
       font-family: "Gilroy-ExtraBold"
       color: $text-white
-      font-style: normal
       font-weight: 800
       font-size: 60px
       line-height: 80px
-      margin-top: 54px
+      margin: 0px
       // margin: 8px
     &-text
       font-style: normal
@@ -80,46 +80,35 @@ body
       font-size: 20px
       line-height: 42px
       color: $text-white
-      margin: 8px
-      margin-bottom: 36px
-  &_right
-    display: flex
-    justify-content: center
-    align-items: center
-    img
-      width: 80%
-      height: 80%
-      margin: 54px
+    &-link
+      display: inline-block
+  &__image
 
-.category
-  span
-    color: $text-green
-  &_header
-    &-item
-      font-family: "Gilroy-ExtraBold"
-      font-style: normal
-      font-weight: 800
-      font-size: 44px
-      line-height: 50px
-  &_tabs
+.benefits
+  &__tabs
     display: flex
     justify-content: space-between
-    margin-top: 20px !important
-    margin-bottom: 54px !important
-    &-item
-      display: flex
-      align-items: center
-      &__text
-        font-style: normal
-        font-weight: 700
-        font-size: 16px
-        line-height: 24px
-      svg
-        margin-right: 17px
-  &_description
+    margin-top: 45px
+    margin-bottom: 54px
+    align-items: center
+  &__tab
+    display: flex
+    justify-content: space-between    
+    &-image
+      margin-right: 17px  
+    &-text
+      font-style: normal
+      font-weight: 700
+      font-size: 16px
+      line-height: 24px
+
+  &__info
+    // display: flex
+    // align-items: center
+    // justify-content: center
+    // align-items: center
     &-text
       font-family: "Gilroy-ExtraBold"
-      font-style: normal
       font-weight: 700
       font-size: 26px
       line-height: 36px
@@ -130,7 +119,7 @@ body
     &-priceblock
       display: flex
       align-items: center
-      padding-top: 60px
+      // padding-top: 60px
       img
         width: 75px
         height: 54px
@@ -178,23 +167,23 @@ body
     &-right
       justify-content: end
 
-.benefits
-  display: flex
-  justify-content: center
-  padding-top: 160px
-  padding-bottom: 160px
-  &-block
-    align-items: center
-    border-right: 1px solid #C0C9D7
-    display: flex
-    margin-right: 70px
-    &:last-child
-      border: none
-      margin-right: 0
-    svg
-      margin-right: 26px
-    p
-      margin-right: 70px
+// .benefits
+//   display: flex
+//   justify-content: center
+//   padding-top: 160px
+//   padding-bottom: 160px
+//   &-block
+//     align-items: center
+//     border-right: 1px solid #C0C9D7
+//     display: flex
+//     margin-right: 70px
+//     &:last-child
+//       border: none
+//       margin-right: 0
+//     svg
+//       margin-right: 26px
+//     p
+//       margin-right: 70px
 
 .assignment
   display: flex
