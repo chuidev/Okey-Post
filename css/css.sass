@@ -1,4 +1,4 @@
-$text-color: #1F2428
+$text-black: #1F2428
 $text-white: #FFFFFF
 $text-green: #01CD7D
 
@@ -16,54 +16,52 @@ body
   // margin: 0
 
 .green-btn
-  font-style: normal
+  display: inline
   font-weight: 700
-  font-size: 13px
-  line-height: 18px
-  text-align: center
+  font-size: 17px
   color: $text-white
   background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%)
   box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2)
   border-radius: 36px
   text-decoration: none
-  padding: 15px 25px
+  padding: 20px 25px
+
+.background
+  background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
+  border-radius: 36px
+  width: 90% !important
 
 .header
-  padding-bottom: 8px
-  &_logo
-    display: flex
-    align-items: center
-  &_menu
+  height: 120px
+  align-items: center
+  &__logo
+  &__menu
     display: flex
     justify-content: space-between
-    align-items: center
-    &-item
-      color: $text-color
+    &-link
+      color: $text-black
       text-decoration: none
       font-size: 15px
-      font-style: normal
       font-weight: 600
-      line-height: 16px
-  &_sign
+  &__sign
     display: flex
     justify-content: end
     align-items: center
-    &-item
-      color: $text-color
+    &-image
+      margin-right: 11px
+    &-link
+      color: $text-black
       text-decoration: none
       font-size: 15px
-      font-style: normal
       font-weight: 600
-      line-height: 16px
-      padding: 20px
+  &__contact
+    display: flex
+    justify-content: end
+    &-link
+      font-size: 13px
 
 .poster
-  background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
-  border-radius: 36px
-  // margin-left: 60px !important
-  // margin-right: 60px !important
-  width: 90% !important
-  &_left
+  &__textblock
     // display: flex
     // flex-direction: column
     // justify-content: center
@@ -88,7 +86,7 @@ body
     display: flex
     justify-content: center
     align-items: center
-    svg
+    img
       width: 80%
       height: 80%
       margin: 54px
