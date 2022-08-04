@@ -2,14 +2,12 @@
   font-family: "Gilroy-Light";
   src: url("../fonts/Gilroy-Light.otf");
 }
-
 @font-face {
   font-family: "Gilroy-ExtraBold";
   src: url("../fonts/Gilroy-ExtraBold.otf");
 }
-
 html {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
 }
 
 .green-btn {
@@ -17,13 +15,11 @@ html {
   font-weight: 700;
   font-size: 17px;
   color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right top, from(#00C97B), color-stop(96.96%, #00D981));
   background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
-  -webkit-box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
-          box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+  box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
   border-radius: 36px;
   text-decoration: none;
-  padding: 20px 25px;
+  padding: 20px 40px;
 }
 
 .background {
@@ -40,66 +36,47 @@ html {
   margin-top: 160px;
 }
 
+.span-green {
+  color: #01CD7D;
+}
+
 .header {
   height: 120px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .header__link {
   color: #1F2428;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
 }
-
 .header__sign {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
-
 .header__sign-image {
   margin-right: 11px;
 }
-
 .header__sign-link {
   color: #1F2428;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
 }
-
 .header__contact {
   font-size: 13px;
 }
 
 .poster {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 680px;
 }
-
 .poster__info-title {
   font-family: "Gilroy-ExtraBold";
   color: #FFFFFF;
@@ -108,7 +85,6 @@ html {
   line-height: 80px;
   margin: 0px;
 }
-
 .poster__info-text {
   font-style: normal;
   font-weight: 300;
@@ -116,83 +92,62 @@ html {
   line-height: 42px;
   color: #FFFFFF;
 }
-
 .poster__info-link {
   display: inline-block;
 }
 
+.benefits {
+  margin-bottom: 160px;
+}
 .benefits__tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 45px;
   margin-bottom: 54px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .benefits__tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .benefits__tab-image {
   margin-right: 17px;
 }
-
 .benefits__tab-text {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
-
-.benefits__info-text {
+.benefits__info-title {
   font-family: "Gilroy-ExtraBold";
   font-weight: 700;
   font-size: 26px;
   line-height: 36px;
-  margin-bottom: 40px;
+  margin-top: 60px;
 }
-
-.benefits__info img {
+.benefits__info-image {
   width: 100%;
-  position: relative;
 }
-
-.benefits__info-priceblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.benefits__priceblock {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  margin-left: 30px;
 }
-
-.benefits__info-priceblock img {
+.benefits__priceblock-image {
   width: 75px;
   height: 54px;
   border-radius: 8px;
   margin-right: 28px;
 }
-
-.benefits__info-priceblock-text {
+.benefits__priceblock-country {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   margin: 0;
 }
-
-.benefits__info-priceblock-price {
+.benefits__priceblock-price {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 700;
@@ -200,146 +155,120 @@ html {
   line-height: 36px;
   margin: 0;
 }
-
-.benefits_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.benefits__slider {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.benefits_footer img {
+.benefits__slider-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits__slider-item:nth-child(even) {
+  flex-direction: column;
+}
+.benefits__slider-image {
   height: 112px;
 }
-
-.benefits_footer svg {
-  margin: 45px;
+.benefits__slider-arrow {
+  margin: 0 45px;
 }
-
-.benefits_footer-left {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.benefits_footer-middle {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.benefits_footer-middle span {
-  color: #01CD7D;
-}
-
-.benefits_footer-middle_1 {
-  font-style: normal;
+.benefits__slider-text1 {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  margin: 7px;
+  margin: 0;
 }
-
-.benefits_footer-middle_2 {
-  font-style: normal;
+.benefits__slider-text2 {
+  font-family: "Gilroy-ExtraBold";
   font-weight: 700;
   font-size: 26px;
   line-height: 36px;
-  margin: 7px;
+  margin: 0;
 }
-
-.benefits_footer-right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+.benefits__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  height: 180px;
+}
+.benefits__footer-block {
+  padding: 15px;
+  display: flex;
+  border-right: 1px solid #C0C9D7;
+}
+.benefits__footer-block:last-child {
+  border: none;
+}
+.benefits__footer-image {
+  margin: 0 26px;
+}
+.benefits__footer-text {
+  margin-right: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .assignment {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #FFFFFF;
 }
-
-.assignment svg {
-  margin-right: 76px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.assignment__image {
+  margin: 50px 76px 50px 0;
 }
-
-.assignment-block_header {
-  font-style: normal;
+.assignment__info-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
 }
-
-.assignment-block_header p {
-  margin-bottom: 11px !important;
-}
-
-.assignment-block_text {
-  font-style: normal;
+.assignment__info-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 30px;
+}
+.assignment__info-link {
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .calculation {
   margin-top: 160px;
 }
-
-.calculation_header {
-  font-family: "Gilroy-ExtraBold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 56px;
-  margin-bottom: 20px;
-}
-
-.calculation_text {
+.calculation__text {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 36px;
 }
-
-.calculation_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.calculation__form {
+  margin-top: 50px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
 }
-
-.calculation_data {
+.calculation__item {
   border-bottom: 1px solid #C0C9D7;
-  margin: 0px 20px;
-  padding: 10px 0;
+  padding-bottom: 15px;
 }
-
-.calculation_data__header {
+.calculation__item-title {
   font-family: "Gilroy-ExtraBold";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
 }
-
-.calculation_data input {
+.calculation__item-data {
+  display: flex;
+  align-items: center;
+}
+.calculation__item-image {
+  margin-right: 10px;
+}
+.calculation__item-input {
   font-family: "Gilroy-Light";
   font-style: normal;
   font-weight: 300;
@@ -347,29 +276,17 @@ html {
   line-height: 16px;
   border: none;
 }
-
-.calculation_data__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.calculation__item-input:focus {
+  border: none;
 }
-
-.calculation_data__item-text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
-  width: 80%;
-  margin-left: 10px;
+.calculation__link {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .variables {
   margin-top: 100px;
 }
-
 .variables_header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -377,22 +294,15 @@ html {
   font-size: 36px;
   line-height: 56px;
 }
-
 .variables_name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-right: 1px solid #C0C9D7;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 50px;
 }
-
 .variables_name svg {
   margin: 0 25px;
 }
-
 .variables_name p {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -400,26 +310,16 @@ html {
   font-size: 18px;
   line-height: 24px;
 }
-
 .variables_data {
   border-right: 1px solid #C0C9D7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .variables_data:last-child {
   border: none;
 }
-
 .variables_data span {
   font-style: normal;
   font-weight: 400;
@@ -427,7 +327,6 @@ html {
   line-height: 18px;
   margin: auto 20px;
 }
-
 .variables_data p {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -440,7 +339,6 @@ html {
 .steps {
   padding-top: 20px;
 }
-
 .steps-header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -448,11 +346,9 @@ html {
   font-size: 44px;
   line-height: 56px;
 }
-
 .steps-block {
   text-align: center;
 }
-
 .steps-block_header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -461,7 +357,6 @@ html {
   line-height: 24px;
   text-align: left;
 }
-
 .steps-block_text {
   text-align: left;
   font-style: normal;
@@ -469,16 +364,13 @@ html {
   font-size: 16px;
   line-height: 30px;
 }
-
 .steps-block_text span {
   color: #01CD7D;
 }
-
 .steps-footer {
   padding-top: 20px;
   padding-bottom: 100px;
 }
-
 .steps-footer_text {
   font-style: normal;
   font-weight: 300;
@@ -489,7 +381,6 @@ html {
 .clients {
   padding-top: 40px;
 }
-
 .clients_header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -497,7 +388,6 @@ html {
   font-size: 18px;
   line-height: 20px;
 }
-
 .clients_text {
   font-style: normal;
   font-weight: 300;
@@ -509,7 +399,6 @@ html {
   padding-top: 50px;
   margin-bottom: 20px;
 }
-
 .reviews_header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -517,23 +406,16 @@ html {
   font-size: 36px;
   line-height: 56px;
 }
-
 .reviews_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 20px;
 }
-
 .reviews_block img {
   border-radius: 8px;
   width: 40%;
   margin-right: 20px;
 }
-
 .reviews_block__info-name {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
@@ -541,7 +423,6 @@ html {
   font-size: 18px;
   line-height: 20px;
 }
-
 .reviews_block__info-text {
   font-style: normal;
   font-weight: 300;
@@ -556,7 +437,6 @@ html {
   font-size: 44px;
   line-height: 56px;
 }
-
 .address_text {
   font-style: normal;
   font-weight: 300;
@@ -565,15 +445,10 @@ html {
 }
 
 .subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 65px 200px;
 }
-
 .subscribe_text {
   font-style: normal;
   font-weight: 700;
@@ -581,4 +456,3 @@ html {
   line-height: 40px;
   color: #FFFFFF;
 }
-/*# sourceMappingURL=css.css.map */

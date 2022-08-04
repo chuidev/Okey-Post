@@ -21,7 +21,7 @@ html
   box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2)
   border-radius: 36px
   text-decoration: none
-  padding: 20px 25px
+  padding: 20px 40px
 
 .background
   background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
@@ -34,6 +34,9 @@ html
   font-size: 44px
   line-height: 50px
   margin-top: 160px
+
+.span-green
+  color: $text-green
 
 .header
   height: 120px
@@ -48,7 +51,7 @@ html
     font-weight: 600
   &__sign
     display: flex
-    justify-content: end
+    justify-content: flex-end
     align-items: center
     &-image
       margin-right: 11px
@@ -60,7 +63,6 @@ html
   &__contact
     font-size: 13px
       
-
 .poster
   display: flex
   align-items: center
@@ -73,7 +75,6 @@ html
       font-size: 60px
       line-height: 80px
       margin: 0px
-      // margin: 8px
     &-text
       font-style: normal
       font-weight: 300
@@ -82,9 +83,9 @@ html
       color: $text-white
     &-link
       display: inline-block
-  &__image
 
 .benefits
+  margin-bottom: 160px
   &__tabs
     display: flex
     justify-content: space-between
@@ -101,158 +102,139 @@ html
       font-weight: 700
       font-size: 16px
       line-height: 24px
-
-  &__info
-    // display: flex
-    // align-items: center
-    // justify-content: center
-    // align-items: center
-    &-text
+  &__info    
+    &-title
       font-family: "Gilroy-ExtraBold"
       font-weight: 700
       font-size: 26px
       line-height: 36px
-      margin-bottom: 40px
-    img
+      margin-top: 60px
+    &-image
       width: 100%
-      position: relative
-    &-priceblock
-      display: flex
-      align-items: center
-      // padding-top: 60px
-      img
-        width: 75px
-        height: 54px
-        border-radius: 8px
-        margin-right: 28px
-      &-text
-        font-style: normal
-        font-weight: 400
-        font-size: 18px
-        line-height: 24px
-        margin: 0
-      &-price
-        font-family: "Gilroy-ExtraBold"
-        font-style: normal
-        font-weight: 700
-        font-size: 26px
-        line-height: 36px
-        margin: 0
-  &_footer
+  &__priceblock
     display: flex
     align-items: center
-    img
+    margin-left: 30px
+    &-image
+      width: 75px
+      height: 54px
+      border-radius: 8px
+      margin-right: 28px
+    &-country
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 24px
+      margin: 0
+    &-price
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 26px
+      line-height: 36px
+      margin: 0
+  &__slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-item
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &:nth-child(even)
+        flex-direction: column
+    &-image
       height: 112px
-    svg
-      margin: 45px
-    &-left
-      justify-content: start
-    &-middle
-      flex-direction: column
-      justify-content: center
-      span
-        color: $text-green
-      &_1
-        font-style: normal
-        font-weight: 300
-        font-size: 18px
-        line-height: 24px
-        margin: 7px
-      &_2
-        font-style: normal
-        font-weight: 700
-        font-size: 26px
-        line-height: 36px
-        margin: 7px
-    &-right
-      justify-content: end
-
-// .benefits
-//   display: flex
-//   justify-content: center
-//   padding-top: 160px
-//   padding-bottom: 160px
-//   &-block
-//     align-items: center
-//     border-right: 1px solid #C0C9D7
-//     display: flex
-//     margin-right: 70px
-//     &:last-child
-//       border: none
-//       margin-right: 0
-//     svg
-//       margin-right: 26px
-//     p
-//       margin-right: 70px
+    &-arrow
+      margin: 0 45px
+    &-text1
+      font-weight: 300
+      font-size: 18px
+      line-height: 24px
+      margin: 0
+    &-text2
+      font-family: "Gilroy-ExtraBold"
+      font-weight: 700
+      font-size: 26px
+      line-height: 36px
+      margin: 0
+  &__footer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 160px
+    height: 180px
+    &-block
+      padding: 15px
+      display: flex
+      border-right: 1px solid #C0C9D7
+      &:last-child
+        border: none
+    &-image
+      margin: 0 26px
+    &-text
+      margin-right: 50px
+      font-weight: 700
+      font-size: 18px
+      line-height: 24px
 
 .assignment
   display: flex
   align-items: center
   color: $text-white
-  svg
-    margin-right: 76px
-    margin-top: 20px
-    margin-bottom: 20px
-  &-block
-    &_header
-      font-style: normal
+  &__image
+    margin: 50px 76px 50px 0
+  &__info
+    &-title
       font-weight: 700
       font-size: 30px
       line-height: 40px
-      p
-        margin-bottom: 11px !important
-    &_text
-      font-style: normal
+    &-text
       font-weight: 400
       font-size: 18px
       line-height: 30px
-      margin-bottom: 30px
+    &-link
+      display: inline-block
+      margin-top: 30px
 
 .calculation
   margin-top: 160px
-  &_header
-    font-family: "Gilroy-ExtraBold"
-    font-style: normal
-    font-weight: 800
-    font-size: 44px
-    line-height: 56px
-    margin-bottom: 20px
-  &_text
+  &__text
+    margin-top: 20px
     font-style: normal
     font-weight: 300
     font-size: 20px
     line-height: 36px
-  &_block
+  &__form
+    margin-top: 50px
     display: flex
-    justify-content: center
-    margin-bottom: 40px
-  &_data
+    align-items: center
+    justify-content: space-between
+    padding: 35px
+  &__item
     border-bottom: 1px solid #C0C9D7
-    margin: 0px 20px
-    padding: 10px 0
-    &__header
+    padding-bottom: 15px
+    &-title
       font-family: "Gilroy-ExtraBold"
-      font-style: normal
       font-weight: 700
       font-size: 14px
-      line-height: 18px
-    input
+    &-data
+      display: flex
+      align-items: center
+    &-image
+      margin-right: 10px
+    &-input
       font-family: "Gilroy-Light"
       font-style: normal
       font-weight: 300
       font-size: 16px
       line-height: 16px
       border: none
-    &__item
-      display: flex
-      align-items: center
-      &-text
-        font-style: normal
-        font-weight: 300
-        font-size: 16px
-        line-height: 16px
-        width: 80%
-        margin-left: 10px
+      &:focus
+        border: none
+  &__link
+    display: inline-block
+    margin-top: 10px
 
 .variables
   margin-top: 100px
@@ -369,14 +351,11 @@ html
         font-weight: 700
         font-size: 18px
         line-height: 20px
-      &-stars
       &-text
         font-style: normal
         font-weight: 300
         font-size: 16px
         line-height: 26px
-      &-date
-      &-city
 
 .address
   &_header
