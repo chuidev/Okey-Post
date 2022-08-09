@@ -290,61 +290,56 @@ html {
   line-height: 56px;
   margin-top: 130px;
 }
-.calculation__delivery-name {
+.calculation__delivery-item {
   display: flex;
-  border-right: 1px solid #C0C9D7;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+}
+.calculation__delivery-name {
+  display: flex;
+  flex-grow: 1;
+  border-right: 1px solid #C0C9D7;
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
-.calculation__delivery svg {
+.calculation__delivery-name img {
   margin: 0 25px;
 }
-
-.variables_data {
+.calculation__delivery-data {
   border-right: 1px solid #C0C9D7;
+  min-width: 180px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  justify-content: center;
+  align-items: center;
 }
-.variables_data:last-child {
-  border: none;
-}
-.variables_data span {
+.calculation__delivery-data span {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  margin: auto 20px;
 }
-.variables_data p {
+.calculation__delivery-data p {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 16px;
-  margin: auto 20px;
+}
+.calculation__delivery-arrowDown {
+  align-content: end;
+}
+.calculation__delivery-arrowDown img {
+  margin-left: 16px;
 }
 
 .steps {
   padding-top: 20px;
 }
-.steps-header {
-  font-family: "Gilroy-ExtraBold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 56px;
-}
-.steps-block {
-  text-align: center;
-}
-.steps-block_header {
+.steps__block-header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 700;
@@ -352,87 +347,110 @@ html {
   line-height: 24px;
   text-align: left;
 }
-.steps-block_text {
+.steps__block-text {
   text-align: left;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
 }
-.steps-block_text span {
+.steps__block-text span {
   color: #01CD7D;
 }
-.steps-footer {
+.steps__footer {
   padding-top: 20px;
   padding-bottom: 100px;
 }
-.steps-footer_text {
+.steps__footer-text {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 36px;
 }
-
-.clients {
-  padding-top: 40px;
+.steps__footer-link {
+  display: inline-block;
+  margin-top: 30px;
 }
-.clients_header {
-  font-family: "Gilroy-ExtraBold";
+
+.clients__text {
   font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+}
+.clients__block-header {
+  font-family: "Gilroy-ExtraBold";
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  margin-top: 30px;
 }
-.clients_text {
+.clients__block-text {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
 }
-
-.reviews {
+.clients__reviews {
   padding-top: 50px;
   margin-bottom: 20px;
 }
-.reviews_header {
+.clients__reviews-header {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
   line-height: 56px;
 }
-.reviews_block {
+.clients__reviews-block {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.reviews_block img {
+.clients__reviews-image {
   border-radius: 8px;
   width: 40%;
   margin-right: 20px;
 }
-.reviews_block__info-name {
+.clients__reviews-name {
   font-family: "Gilroy-ExtraBold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
-.reviews_block__info-text {
+.clients__reviews-text {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
 }
-
-.address_header {
-  font-family: "Gilroy-ExtraBold";
+.clients__reviews-date {
   font-style: normal;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 56px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
 }
-.address_text {
+.clients__reviews-date span {
+  font-family: "Gilroy-ExtraBold";
+  font-weight: 700;
+}
+.clients__reviews-city {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.clients__reviews-city span {
+  font-family: "Gilroy-ExtraBold";
+  font-weight: 700;
+}
+.clients__reviews-link {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.address__text {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;

@@ -242,60 +242,56 @@ html
       font-size: 36px
       line-height: 56px
       margin-top: 130px
-    &-name
+    &-item
       display: flex
-      border-right: 1px solid #C0C9D7
+      justify-content: space-between
       align-items: center
       margin-bottom: 50px
+    &-name
+      display: flex
+      flex-grow: 1
+      border-right: 1px solid #C0C9D7
       font-family: "Gilroy-ExtraBold"
       font-style: normal
       font-weight: 700
       font-size: 18px
       line-height: 24px
-    svg
-      margin: 0 25px
-
-.variables
-  &_data    
-    border-right: 1px solid #C0C9D7
-    display: flex
-    flex-direction: column
-    margin-bottom: 50px
-    justify-content: center
-    &:last-child
-      border: none
-    span
-      font-style: normal
-      font-weight: 400
-      font-size: 14px
-      line-height: 18px
-      margin: auto 20px
-    p
-      font-family: "Gilroy-ExtraBold"
-      font-style: normal
-      font-weight: 700
-      font-size: 20px
-      line-height: 16px
-      margin: auto 20px
+      img
+        margin: 0 25px
+    &-data
+      border-right: 1px solid #C0C9D7
+      min-width: 180px
+      display: flex
+      flex-direction: column
+      align-items: center
+      span
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+      p
+        font-family: "Gilroy-ExtraBold"
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 16px
+    &-arrowDown
+      align-content: end
+      img
+        margin-left: 16px
 
 .steps
   padding-top: 20px
-  &-header
-    font-family: "Gilroy-ExtraBold"
-    font-style: normal
-    font-weight: 800
-    font-size: 44px
-    line-height: 56px
-  &-block
-    text-align: center
-    &_header
+  &__block
+    // text-align: center
+    &-header
       font-family: "Gilroy-ExtraBold"
       font-style: normal
       font-weight: 700
       font-size: 20px
       line-height: 24px
       text-align: left
-    &_text
+    &-text
       text-align: left
       font-style: normal
       font-weight: 300
@@ -303,67 +299,87 @@ html
       line-height: 30px
       span
         color: $text-green
-  &-footer
+  &__footer
     padding-top: 20px
     padding-bottom: 100px
-    &_text
+    &-text
       font-style: normal
       font-weight: 300
       font-size: 20px
       line-height: 36px
+    &-link
+      display: inline-block
+      margin-top: 30px
 
 .clients
-  padding-top: 40px
-  &_header
-    font-family: "Gilroy-ExtraBold"
-    font-style: normal
-    font-weight: 700
-    font-size: 18px
-    line-height: 20px
-  &_text
+  &__text
     font-style: normal
     font-weight: 300
-    font-size: 16px
-    line-height: 26px
+    font-size: 20px
+    line-height: 36px
+  &__block
+    &-header
+      font-family: "Gilroy-ExtraBold"
+      font-weight: 700
+      font-size: 18px
+      line-height: 20px
+      margin-top: 30px
+    &-text
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 26px
 
-.reviews
-  padding-top: 50px
-  margin-bottom: 20px
-  &_header
-    font-family: "Gilroy-ExtraBold"
-    font-style: normal
-    font-weight: 800
-    font-size: 36px
-    line-height: 56px
-  &_block
-    display: flex
-    align-items: center
+  &__reviews
+    padding-top: 50px
     margin-bottom: 20px
-    img
+    &-header
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 800
+      font-size: 36px
+      line-height: 56px
+    &-block
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+    &-image
       border-radius: 8px
       width: 40%
       margin-right: 20px
-    &__info
-      &-name
+    &-name
+      font-family: "Gilroy-ExtraBold"
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 20px
+    &-text
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 26px
+    &-date
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 24px
+      span
         font-family: "Gilroy-ExtraBold"
-        font-style: normal
         font-weight: 700
-        font-size: 18px
-        line-height: 20px
-      &-text
-        font-style: normal
-        font-weight: 300
-        font-size: 16px
-        line-height: 26px
+    &-city
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 24px
+      span
+        font-family: "Gilroy-ExtraBold"
+        font-weight: 700
+    &-link
+      display: inline-block
+      margin-top: 30px
 
 .address
-  &_header
-    font-family: "Gilroy-ExtraBold"
-    font-style: normal
-    font-weight: 800
-    font-size: 44px
-    line-height: 56px
-  &_text
+  &__text
     font-style: normal
     font-weight: 300
     font-size: 18px
